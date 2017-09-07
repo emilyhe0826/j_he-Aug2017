@@ -76,4 +76,6 @@ public class Calculate {
 		String quadratic = firstCoef + n + "^2 + " +secondCoef + n + " +" + constantNum;
 		return quadratic;
 	}	
+	
+	
 }
