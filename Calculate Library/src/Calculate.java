@@ -56,7 +56,7 @@ public class Calculate {
 		return improper;
 	}
 	
-	// this methid convert improper fraction to mixed number
+	// this method convert improper fraction to mixed number
 	public static String toMixedNum(int top,int bottom) {
 		int wholeNum = top/bottom;
 		int numerator = top-wholeNum*bottom;
@@ -66,7 +66,7 @@ public class Calculate {
 	}
 	
 	/*convert a binomial multiplication into a quadratic equation,
-	 * the method accept four(4) interger 
+	 * the method accept four(4) integer 
 	 * and a string and then return a string
 	 */
 	public static String foil(int a,int b,int c, int d, String n) {
