@@ -5,6 +5,7 @@
  * of method to do basic math functions. 
 */
 public class Calculate {
+	//PART 1
 	
 	//square the input
 	public static int square (int operand) {
@@ -34,13 +35,13 @@ public class Calculate {
 		return radian *(360/(2*pi));
 	}
 	
-	// this method convert degrees to radian
+	// this method convert degrees to radians
 	public static double toRadians (double degrees) {
 		double pi = 3.14159;
-		return degree *((2*pi)/360);
+		return degrees *((2*pi)/360);
 	}
 	
-	//this method takes 3 coefficeint and return the value of the discriminant.
+	//this method takes 3 coefficient and return the value of the discriminant.
 	public static double discriminant (double a,double b, double c) {
 		return (b*b)-4*a*c;
 	}
@@ -77,5 +78,18 @@ public class Calculate {
 		return quadratic;
 	}	
 	
+	//PART 2
+	
+	/*this method determines whether or not 
+	 * one integer is evenly divisible by another.
+	 * The method accepts two integers
+	 *  and return a boolean
+	 */
+	
+	public static boolean() {
+		
+		boolean isDivisibleBy == false;
+		
+	}
 	
 }
