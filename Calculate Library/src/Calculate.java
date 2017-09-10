@@ -5,7 +5,7 @@
  * of method to do basic math functions. 
 */
 public class Calculate {
-	
+	//Part 1
 	//square the input
 	public static int square (int operand) {
 		int squared = operand*operand;
@@ -76,6 +76,62 @@ public class Calculate {
 		String quadratic = firstCoef + n + "^2 + " +secondCoef + n + " +" + constantNum;
 		return quadratic;
 	}	
+	//Part 2
 	
+	public static boolean isDivisibleBy (int num1, int num2) { // accepts two integers and returns a boolean
+		// determines whether or not one integer is evenly divisible by another
+		if (num2 == 0 || num1 == 0) {
+			throw new IllegalArgumentException("divisor : 0");
+		}
+		if (num1 % num2 == 0 || num2 % num1 == 0) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	public static double absValue (double a) { // accepts a double and returns a double
+		// returns the absolute value of the number passed
+		if (a > 0) {
+			return a;
+		} else {
+			return a*-1;
+		}
+	}
+	
+	public static int max (int num1, int num2) { // accepts two integers and returns a boolean
+		// returns the larger of the values passed
+		if (num1 > num2) {
+			return num1;
+		} else {
+			return num2;
+		}
+	}
+	
+	public static double max (double number1, double number2, double number3) { // accepts three doubles and returns a double
+		// returns the largest of the values passed
+		if (number1 > number2 && number1 > number3) {
+			return number1;
+		} else if (number2 > number1 && number2 > number3) {
+			return number2;
+		} else {
+			return number3;
+		}
+	}
+	
+	public static int min (int number1, int number2) { // accepts two integers and returns an integer
+		// returns the smaller of the values passed
+		if (number1 < number2) {
+			return number1;
+		} else {
+			return number2;
+		}
+	}
+	
+	public static double round2 (double a) { // accepts and returns a double 
+		// rounds a double correctly to 2 decimal places
+		double intnumber = (int)(a*100);
+		return intnumber/100;
+	}
 	
 }
