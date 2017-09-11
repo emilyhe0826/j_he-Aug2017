@@ -78,8 +78,9 @@ public class Calculate {
 	}	
 	//Part 2
 	
-	public static boolean isDivisibleBy (int num1, int num2) { // accepts two integers and returns a boolean
-		// determines whether or not one integer is evenly divisible by another
+	 // accepts two integers and returns a boolean
+	 // determines whether or not one integer is evenly divisible by another
+	public static boolean isDivisibleBy (int num1, int num2) {
 		if (num2 == 0 || num1 == 0) {
 			throw new IllegalArgumentException("divisor : 0");
 		}
@@ -90,8 +91,9 @@ public class Calculate {
 		}
 	}
 	
-	public static double absValue (double a) { // accepts a double and returns a double
-		// returns the absolute value of the number passed
+	// accepts a double and returns a double
+	// returns the absolute value of the number passed
+	public static double absValue (double a) { 
 		if (a > 0) {
 			return a;
 		} else {
@@ -99,8 +101,9 @@ public class Calculate {
 		}
 	}
 	
-	public static int max (int num1, int num2) { // accepts two integers and returns a boolean
-		// returns the larger of the values passed
+	// accepts two integers and returns a boolean
+	// returns the larger of the values passed
+	public static int max (int num1, int num2) { 
 		if (num1 > num2) {
 			return num1;
 		} else {
@@ -108,8 +111,9 @@ public class Calculate {
 		}
 	}
 	
-	public static double max (double number1, double number2, double number3) { // accepts three doubles and returns a double
-		// returns the largest of the values passed
+	// accepts three doubles and returns a double
+	// returns the largest of the values passed
+	public static double max (double number1, double number2, double number3) { 
 		if (number1 > number2 && number1 > number3) {
 			return number1;
 		} else if (number2 > number1 && number2 > number3) {
@@ -119,8 +123,9 @@ public class Calculate {
 		}
 	}
 	
-	public static int min (int number1, int number2) { // accepts two integers and returns an integer
-		// returns the smaller of the values passed
+	// accepts two integers and returns an integer
+	// returns the smaller of the values passed
+	public static int min (int number1, int number2) { 
 		if (number1 < number2) {
 			return number1;
 		} else {
@@ -128,8 +133,9 @@ public class Calculate {
 		}
 	}
 	
-	public static double round2 (double a) { // accepts and returns a double 
-		// rounds a double correctly to 2 decimal places
+	// accepts and returns a double
+	// rounds a double correctly to 2 decimal places
+	public static double round2 (double a) {  
 		double intnumber = (int)(a*100);
 		return intnumber/100;
 	}
