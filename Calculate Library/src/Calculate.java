@@ -139,5 +139,64 @@ public class Calculate {
 		double intnumber = (int)(a*100);
 		return intnumber/100;
 	}
+	// Part 3: Methods that use Loops and Calls to Other Methods
+	
+	public static double exponent (double base, int power) { // accepts a double and an integer and returns a double
+		// raises a value to a positive integer power
+		if (power < 0) {
+			throw new IllegalArgumentException("negative exponent: " + power);
+		}
+		double answer = 1;
+		for (int i = 1; i <= power; i++) {
+			answer *= base;
+		}
+		return answer;
+	}
+	
+	public static int factorial (int a) { // accepts an integer and returns an integer
+		// returns the factorial of the value passed
+		if (a < 0) {
+			throw new IllegalArgumentException("negative a: " + a);
+		}
+		int answer = 1;
+	    for ( int i = 2; i <= a; i++ ) {  
+	        answer *= i;
+	    }  
+	    return answer;
+	}  
+	
+	public static boolean isPrime (int a) { // accepts an integer and returns a boolean
+		// determines whether or not an integer is prime
+	    boolean check;
+	    if (a > 1) {
+	    	for (int i = a - 1; i > 1; i--) {
+	    		check = Calculate.isDivisibleBy(a, i);
+	    		if (check == true) {
+	    			return false;
+	    		}
+	    	}
+	    } else {
+	    	return false;
+	    }
+	    return true;
+		}
+
+	public static int gcf (int num1, int num2) { // accepts two positive integers and returns an integer
+		// finds the greatest common factor of two integers
+		while (num2 != 0) {
+			int c = num1;
+			num1 = num2;
+			num2 = c % num2;
+		}
+		return (int)Calculate.absValue(num1);
+	}
+	
+	public static double sqrt (double a) { // accepts and returns a double
+		// returns an approximation of the square root of the value passed, accurate to two decimal places
+		if (a < 0) {
+			throw new IllegalArgumentException ("negative a:" + a);
+		}
+		return Math.sqrt(a);
+	}
 	
 }
