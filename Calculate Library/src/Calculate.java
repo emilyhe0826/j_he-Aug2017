@@ -198,5 +198,23 @@ public class Calculate {
 		}
 		return Math.sqrt(a);
 	}
+// Part 4: Throwing Exceptions
+		// 1. See factorial, exponent, isDivisibleBy, and sqrt
+		// 2.
+	public static String quadForm (int a, int b, int c) { // accepts three integers and returns a String
+		// uses the coefficients of a quadratic equation in standard form and uses the quadratic formula to approximate the real roots
+		double answer = Calculate.discriminant(a, b, c);
+		double discriminantRoot = Calculate.sqrt(answer);
+		double root1 = (-b + discriminantRoot) / (2 * a);
+		double root2 = (-b - discriminantRoot) / (2 * a);
+		if (answer < 0) {
+		   return ("no real roots");
+		} else if (answer > 0) {
+		   return (root1 + " and " + root2);
+		} else if (answer == 0) {
+		   return (root1 + " ");
+		}
+	    return 0 + "";
+		}
 	
 }
