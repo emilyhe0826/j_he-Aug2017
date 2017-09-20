@@ -75,9 +75,9 @@ public class Calculate {
 		int constantNum = b*d;
 		String quadratic = firstCoef + n + "^2 + " +secondCoef + n + " +" + constantNum;
 		return quadratic;
-	}	
-	//Part 2
+	}
 	
+	//Part 2
 	 // accepts two integers and returns a boolean
 	 // determines whether or not one integer is evenly divisible by another
 	public static boolean isDivisibleBy (int num1, int num2) {
@@ -198,11 +198,13 @@ public class Calculate {
 		}
 		return Math.sqrt(a);
 	}
+	
 // Part 4: Throwing Exceptions
 		// 1. See factorial, exponent, isDivisibleBy, and sqrt
-		// 2.
-	public static String quadForm (int a, int b, int c) { // accepts three integers and returns a String
-		// uses the coefficients of a quadratic equation in standard form and uses the quadratic formula to approximate the real roots
+	
+		//Accepts three integers and returns a String
+		//Uses the coefficients of a quadratic equation in standard form and uses the quadratic formula to approximate the real roots
+	public static String quadForm (int a, int b, int c) {
 		double answer = Calculate.discriminant(a, b, c);
 		double discriminantRoot = Calculate.sqrt(answer);
 		double root1 = (-b + discriminantRoot) / (2 * a);
@@ -214,7 +216,7 @@ public class Calculate {
 		} else if (answer == 0) {
 		   return (root1 + " ");
 		}
-	    return 0 + "";
-		}
+		return 0 + "";
+	}
 	
 }
