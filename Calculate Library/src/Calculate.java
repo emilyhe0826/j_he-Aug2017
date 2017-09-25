@@ -4,8 +4,9 @@
  * In Calculate,it will calculate series 
  * of method to do basic math functions. 
 */
+
+//Part 1
 public class Calculate {
-	//Part 1
 	//square the input
 	public static int square (int operand) {
 		int squared = operand*operand;
@@ -139,6 +140,7 @@ public class Calculate {
 		double intnumber = (int)(a*100);
 		return intnumber/100;
 	}
+
 	// Part 3: Methods that use Loops and Calls to Other Methods
 	
 	public static double exponent (double base, int power) { // accepts a double and an integer and returns a double
@@ -179,7 +181,7 @@ public class Calculate {
 	    	return false;
 	    }
 	    return true;
-		}
+	}
 
 	public static int gcf (int num1, int num2) { // accepts two positive integers and returns an integer
 		// finds the greatest common factor of two integers
