@@ -1,5 +1,5 @@
 /*Emily He
- * September 6, 2017
+ * September 29, 2017
  * Our self written Math Library
  * In Calculate,it will calculate series 
  * of method to do basic math functions. 
@@ -29,16 +29,16 @@ public class Calculate {
 		return (a+b+c)/3;
 	}
 	
-	//convert radian to degrees
-	public static double toDegrees (double radian) {
-		double pi = 3.14159;
-		return radian *(360/(2*pi));
+	// accepts a double and returns a double
+	// converts an angle measure given in radians into degrees
+	public static double toDegrees (double radians) { 
+		return (180/3.14159)*(radians); 
 	}
 	
-	// this method convert degrees to radian
-	public static double toRadians (double degrees) {
-		double pi = 3.14159;
-		return degree *((2*pi)/360);
+	// accepts a double and returns a double
+	// converts an angle measure given in degrees into radians
+	public static double toRadians (double degrees) { 
+		return (3.14159/180)*(degrees); 
 	}
 	
 	//this method takes 3 coefficeint and return the value of the discriminant.
@@ -143,8 +143,9 @@ public class Calculate {
 
 	// Part 3: Methods that use Loops and Calls to Other Methods
 	
-	public static double exponent (double base, int power) { // accepts a double and an integer and returns a double
-		// raises a value to a positive integer power
+	// accepts a double and an integer and returns a double
+	// raises a value to a positive integer power
+	public static double exponent (double base, int power) { 
 		if (power < 0) {
 			throw new IllegalArgumentException("negative exponent: " + power);
 		}
@@ -155,8 +156,9 @@ public class Calculate {
 		return answer;
 	}
 	
-	public static int factorial (int a) { // accepts an integer and returns an integer
-		// returns the factorial of the value passed
+	// accepts an integer and returns an integer
+	// returns the factorial of the value passed
+	public static int factorial (int a) { 
 		if (a < 0) {
 			throw new IllegalArgumentException("negative a: " + a);
 		}
@@ -167,8 +169,9 @@ public class Calculate {
 	    return answer;
 	}  
 	
-	public static boolean isPrime (int a) { // accepts an integer and returns a boolean
-		// determines whether or not an integer is prime
+	// accepts an integer and returns a boolean
+	// determines whether or not an integer is prime
+	public static boolean isPrime (int a) { 
 	    boolean check;
 	    if (a > 1) {
 	    	for (int i = a - 1; i > 1; i--) {
@@ -183,8 +186,9 @@ public class Calculate {
 	    return true;
 	}
 
-	public static int gcf (int num1, int num2) { // accepts two positive integers and returns an integer
-		// finds the greatest common factor of two integers
+	// accepts two positive integers and returns an integer
+	// finds the greatest common factor of two integers
+	public static int gcf (int num1, int num2) { 
 		while (num2 != 0) {
 			int c = num1;
 			num1 = num2;
@@ -193,8 +197,9 @@ public class Calculate {
 		return (int)Calculate.absValue(num1);
 	}
 	
-	public static double sqrt (double a) { // accepts and returns a double
-		// returns an approximation of the square root of the value passed, accurate to two decimal places
+	// accepts and returns a double
+	// returns an approximation of the square root of the value passed, accurate to two decimal places
+	public static double sqrt (double a) { 
 		if (a < 0) {
 			throw new IllegalArgumentException ("negative a:" + a);
 		}
@@ -202,8 +207,8 @@ public class Calculate {
 	}
 	
 // Part 4: Throwing Exceptions
-		// 1. See factorial, exponent, isDivisibleBy, and sqrt
 	
+		// See factorial, exponent, isDivisibleBy, and square
 		//Accepts three integers and returns a String
 		//Uses the coefficients of a quadratic equation in standard form and uses the quadratic formula to approximate the real roots
 	public static String quadForm (int a, int b, int c) {
@@ -220,5 +225,4 @@ public class Calculate {
 		}
 		return 0 + "";
 	}
-	
 }
