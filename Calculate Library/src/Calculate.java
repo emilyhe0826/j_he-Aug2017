@@ -7,6 +7,11 @@
 
 //Part 1
 public class Calculate {
+<<<<<<< HEAD
+=======
+	//PART 1
+	
+>>>>>>> efab7670a3dcf3ad34cae579aba051abbf438ce6
 	//square the input
 	public static int square (int operand) {
 		int squared = operand*operand;
@@ -35,13 +40,20 @@ public class Calculate {
 		return (180/3.14159)*(radians); 
 	}
 	
+<<<<<<< HEAD
 	// accepts a double and returns a double
 	// converts an angle measure given in degrees into radians
 	public static double toRadians (double degrees) { 
 		return (3.14159/180)*(degrees); 
+=======
+	// this method convert degrees to radians
+	public static double toRadians (double degrees) {
+		double pi = 3.14159;
+		return degrees *((2*pi)/360);
+>>>>>>> efab7670a3dcf3ad34cae579aba051abbf438ce6
 	}
 	
-	//this method takes 3 coefficeint and return the value of the discriminant.
+	//this method takes 3 coefficient and return the value of the discriminant.
 	public static double discriminant (double a,double b, double c) {
 		return (b*b)-4*a*c;
 	}
@@ -102,6 +114,7 @@ public class Calculate {
 		}
 	}
 	
+<<<<<<< HEAD
 	// accepts two integers and returns a boolean
 	// returns the larger of the values passed
 	public static int max (int num1, int num2) { 
@@ -122,6 +135,20 @@ public class Calculate {
 		} else {
 			return number3;
 		}
+=======
+	//PART 2
+	
+	/*this method determines whether or not 
+	 * one integer is evenly divisible by another.
+	 * The method accepts two integers
+	 *  and return a boolean
+	 */
+	
+	public static boolean() {
+		
+		boolean isDivisibleBy == false;
+		
+>>>>>>> efab7670a3dcf3ad34cae579aba051abbf438ce6
 	}
 	
 	// accepts two integers and returns an integer
