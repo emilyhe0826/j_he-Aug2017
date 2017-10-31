@@ -15,7 +15,6 @@ import java.util.Arrays;
 	//	it will split at the word "really" and return an array of ["I "," like "," red apples!"]
 	//play around with String.split! 
 	//What happens if you "I reallyreally likeapples".split("really") ?
-
 public class Split {
 	public static void main(String[] args) {
 		// testing Example1:
