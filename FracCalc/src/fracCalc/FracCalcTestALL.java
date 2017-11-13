@@ -61,4 +61,3 @@ public class FracCalcTestALL
         assertEquals("See console window for failure info", true, false);
     }
 }
-
