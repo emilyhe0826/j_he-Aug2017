@@ -1,6 +1,8 @@
 import java.util.Scanner;
-
+//Emily He
+//November.7.2017
 //A simple class to run the Magpie class.
+
 
 public class MagpieRunner2 {
 
@@ -17,6 +19,7 @@ public class MagpieRunner2 {
 			System.out.println(maggie.getResponse(statement));
 			statement = in.nextLine();
 		}
+		in.close();
 	}
 
 }
