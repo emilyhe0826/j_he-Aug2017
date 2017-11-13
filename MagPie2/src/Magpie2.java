@@ -1,3 +1,8 @@
+//Emily He
+//November.7.2017
+//The Magpie class generates different response 
+//for different user statement.
+
 public class Magpie2 {
 
 	//Get a default greeting and return a greeting	
@@ -20,21 +25,29 @@ public class Magpie2 {
 		} else if (statement.indexOf("mother") >= 0
 				|| statement.indexOf("father") >= 0
 				|| statement.indexOf("sister") >= 0
+				|| statement.indexOf("cousin") >= 0
+				|| statement.indexOf("grandparents") >= 0
 				|| statement.indexOf("brother") >= 0) {
 			response = "You have a really nice family.";
 		} else if (statement.indexOf("dog") >= 0 
 				|| statement.indexOf("cat") >= 0) {
 			response = "Pets can be your best friend!";
-		} else if (statement.indexOf("Mr.") >= 0) {
+		} else if (statement.indexOf("Mr.") >= 0
+				|| statement.indexOf("Mr. Lamont")>=0
+				|| statement.indexOf("Mr. Cancilla")>=0
+				|| statement.indexOf("Mr. knox")>=0
+				|| statement.indexOf("Mr. deHerr")>=0
+				|| statement.indexOf("Mr. Millstein")>=0){
 			response = "He sounds like a nice teacher.";
-		} else if (statement.indexOf("Mrs.") >= 0) {
+		} else if (statement.indexOf("Mrs.") >= 0
+				|| statement.indexOf("Mrs. Dreyer")>=0) {
+			
 			response = "She sounds like a nice teacher.";
 		} else {
 			response = getRandomResponse();
 		}
 		return response;
 	}
-	
 
 	/**
 	 * Pick a default response to use if nothing else fits.
@@ -58,6 +71,8 @@ public class Magpie2 {
 			response = "Oh. Really?";
 		} else if (whichResponse == 5) {
 			response = "Woah. Sounds good!";
+		}else if (whichResponse == 6) {
+			response = "Trust me, I'm a professional.";
 		}
 
 		return response;
